@@ -1,0 +1,68 @@
+<div class="card">
+    <div class="card-body">
+
+        <h4 class="card-title">Create Basic Note Information</h4>
+
+
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label for="name">Note Name</label>
+                    <input id="name" name="pname" type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="imageurl">Image url</label>
+                    <input id="imageurl" name="imageurl" type="text" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="videourl">Video url</label>
+                    <input id="videourl" name="videourl" type="text" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="type">Note Type</label>
+                    <input id="type" name="type" type="text" class="form-control" value="{{typeId}}">
+                </div>
+
+                <!-- <div class="form-group">
+                        <label class="control-label">Category</label>
+                        <select class="form-control select2 select2-hidden-accessible" data-select2-id="1" tabindex="-1" aria-hidden="true">
+                            <option data-select2-id="3">Select</option>
+                            <option value="AK">Alaska</option>
+                            <option value="HI">Hawaii</option>
+                        </select>
+                    </div> -->
+
+                <div class="form-group">
+                    <label class="control-label">Features</label>
+
+                    <select class="select2 form-control select2-multiple select2-hidden-accessible" multiple=""
+                        data-placeholder="Choose ..." data-select2-id="4" tabindex="-1" aria-hidden="true">
+                        <option value="AK">Alaska</option>
+                        <option value="HI">Hawaii</option>
+                        <option value="CA">California</option>
+                        <option value="NV">Nevada</option>
+                        <option value="OR">Oregon</option>
+                        <option value="WA">Washington</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label for="article">Content</label>
+                    <textarea class="form-control" id="article" rows="15"></textarea>
+                </div>
+            </div>
+        </div>
+
+
+
+        <button (click)="addPost()" class="btn btn-success mr-1 waves-effect waves-light">Save Changes</button>
+        <button (click)="cancel()" class="btn btn-secondary waves-effect">Cancel</button>
+
+
+    </div>
+</div>

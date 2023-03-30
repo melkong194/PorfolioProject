@@ -1,0 +1,19 @@
+<div class="d-flex flex-column flex-md-row align-items-center justify-content-between p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm fixed-top">
+    <h5 class="my-0 mr-md-auto font-weight-normal logo" routerLink="/admin">ADMIN</h5>
+    <nav class="my-2 my-md-0 mr-md-auto text-uppercase font-weight-bold">
+      <a class="p-2 " routerLinkActive="active" [routerLink]="['/admin']" [routerLinkActiveOptions]="{exact: true}">Resume</a>
+      <a class="p-2 " routerLinkActive="active" routerLink="/admin/porf">Project Porfolio</a>
+      <a class="p-2 " routerLinkActive="active" routerLink="/admin/note">Notes</a>
+      <!-- <a class="p-2 " routerLinkActive="active" routerLink="/gallery">Gallery</a> -->
+    </nav>
+
+    <div class="d-flex align-items-center">
+        <a class="position-relative" routerLink="/">
+            <i class="fa fa-user-circle-o fa-2x mr-5 text-dark" aria-hidden="true"></i>
+            <!-- <div class="cart-no">@</div> -->
+        </a>
+    </div>
+
+    <!-- <a class="btn btn-outline-primary" href="#">Login</a> -->
+
+  </div>

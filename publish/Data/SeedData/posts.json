@@ -1,0 +1,23 @@
+[
+  {
+    "Name": "HOISTING",
+    "Article": "JavaScript Hoisting refers to the process whereby the interpreter appears to move the declaration of functions, variables or classes to the top of their scope, prior to execution of the code.\n\nHoisting is not a term normatively defined in the ECMAScript specification. The spec does define a group of declarations as HoistableDeclaration, but this only includes function, function*, async function, and async function* declarations. Hoisting is often considered a feature of var declarations as well, although in a different way. In colloquial terms, any of the following behaviors may be regarded as hoisting:\n\nBeing able to use a variable's value in its scope before the line it is declared. (\"Value hoisting\")\nBeing able to reference a variable in its scope before the line it is declared, without throwing a ReferenceError, but the value is always undefined. (\"Declaration hoisting\")\nThe declaration of the variable causes behavior changes in its scope before the line in which it is declared.\nThe four function declarations above are hoisted with type 1 behavior; var declaration is hoisted with type 2 behavior; let, const, and class declarations (also collectively called lexical declarations) are hoisted with type 3 behavior.",
+    "Imageurl": "https://res.cloudinary.com/practicaldev/image/fetch/s--Ceq9cg87--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://thepracticaldev.s3.amazonaws.com/i/kaf11wh85tkhfv1338b4.png",
+    "Videourl": "",
+    "PostTypeId": 1
+  },
+  {
+    "Name": "SCOOPING",
+    "Article": "A Multi-agent system is a system that consists of several agents that interact with each other. \ninteractions are often handled by messages that are sent between the agents",
+    "Imageurl": "",
+    "Videourl": "",
+    "PostTypeId": 1
+  },
+  {
+    "Name": "DEPLOY API WITH DOCKER",
+    "Article": "Learning how to deploy API with Docker by adding docker-compose.yml",
+    "Imageurl": "https://i.ibb.co/0fjR3rK/Screenshot-17.png",
+    "Videourl": "",
+    "PostTypeId": 2
+  }
+]

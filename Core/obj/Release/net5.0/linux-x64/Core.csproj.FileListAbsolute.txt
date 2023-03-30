@@ -1,0 +1,12 @@
+C:\porf\Core\bin\Release\net5.0\linux-x64\Core.deps.json
+C:\porf\Core\bin\Release\net5.0\linux-x64\Core.dll
+C:\porf\Core\bin\Release\net5.0\linux-x64\Core.pdb
+C:\porf\Core\obj\Release\net5.0\linux-x64\Core.csproj.AssemblyReference.cache
+C:\porf\Core\obj\Release\net5.0\linux-x64\Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\porf\Core\obj\Release\net5.0\linux-x64\Core.AssemblyInfoInputs.cache
+C:\porf\Core\obj\Release\net5.0\linux-x64\Core.AssemblyInfo.cs
+C:\porf\Core\obj\Release\net5.0\linux-x64\Core.csproj.CoreCompileInputs.cache
+C:\porf\Core\obj\Release\net5.0\linux-x64\Core.dll
+C:\porf\Core\obj\Release\net5.0\linux-x64\refint\Core.dll
+C:\porf\Core\obj\Release\net5.0\linux-x64\Core.pdb
+C:\porf\Core\obj\Release\net5.0\linux-x64\ref\Core.dll

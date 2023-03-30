@@ -1,0 +1,30 @@
+[
+  {
+    "Name": "Language Sharing Interface",
+    "Article": "The purpose for this development is to create a tool supporting transcription work. There are following objectives:\n• Aligning Indigenous spoken language materials such as words or parts of speech to for combinations of generated syllables from collected recordings and people’s new voice recordings.\n• Provide suitable interactive interface for support for the collecting work between non-Indigenous and Indigenous speaker.",
+    "Imageurl": "https://i.ibb.co/RbdyvDq/Screenshot-1168.png",
+    "Videourl": "https://www.youtube.com/embed/eI5SnjNxxrk",
+    "PorfTypeId": 1
+  },
+  {
+    "Name": "Home Energy Trading System",
+    "Article": "A Multi-agent system is a system that consists of several agents that interact with each other. \ninteractions are often handled by messages that are sent between the agents",
+    "Imageurl": "https://i.ibb.co/sV6PJBL/Screenshot-16.png",
+    "Videourl": "",
+    "PorfTypeId": 2
+  },
+  {
+    "Name": "Hoan My Website",
+    "Article": "A complete webpages for a furniture showroom",
+    "Imageurl": "https://i.ibb.co/xgY4fTJ/310601361-1557903361336266-3684296426484486032-n.jpg",
+    "Videourl": "",
+    "PorfTypeId": 3
+  },
+  {
+    "Name": "Darwin Explorer APP",
+    "Article": "A android app for darwin tourists",
+    "Imageurl": "https://i.ibb.co/4MQy098/fishing.png",
+    "Videourl": "",
+    "PorfTypeId": 4
+  }
+]

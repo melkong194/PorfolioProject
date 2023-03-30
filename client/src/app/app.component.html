@@ -1,0 +1,14 @@
+<div>
+    <div *ngIf="this.ad==false">
+        <app-nav-bar></app-nav-bar>
+    </div>
+    <div *ngIf="this.ad">
+        <app-navbar-ad></app-navbar-ad>
+    </div>
+</div>
+<div class="container mb-4" style="margin-top: 100px;">
+    <div class="dv_ct_body">
+        <router-outlet></router-outlet>
+        
+    </div>
+</div>

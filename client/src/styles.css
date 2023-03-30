@@ -1,0 +1,114 @@
+/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import "../node_modules/font-awesome/css/font-awesome.min.css";
+
+a, a:active, a:hover{
+    text-decoration: none;
+    cursor:pointer;
+}
+
+body {
+    background-image: url("./assets/images/bg.jpg");
+    background-repeat: repeat;
+  }
+
+.zippy { 
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+
+.zippy-heading { 
+    font-weight: bold;
+    padding: 16px;
+    cursor: pointer;
+}
+
+
+.zippy-body { 
+    padding: 20px;
+    overflow: hidden;
+}
+
+.expanded { 
+    background: #800046;
+    color: #fff;
+}
+
+.fa { 
+    float: right;
+}
+
+.dv_ct_body {
+    border: 1px solid #AD005D;
+    border-radius: 5px;
+    padding: 15px 50px 30px 50px;
+    background-color: white;
+    vertical-align: top;
+}
+
+.form-inline > input{
+    width: 300px !important;
+}
+
+#toggleMenu {
+    display: none;
+}
+@media only screen and (max-width: 790px) {
+    /* For phone & small tablet: */
+    app-paging-header{
+        display: none;
+    }
+
+    #toggleMenu {
+        display:block;
+    }
+    
+    .dv_ct_body {
+        padding: 15px 0px 30px 0px;
+    }
+    .container{
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+    .col-9{
+        max-width: 100% !important;
+        flex-basis: 100%;
+    }
+    .form-inline{
+        justify-content: flex-start !important;
+    }
+    .form-inline > input{
+        width: 150px !important;
+    }
+    #btn-reset{
+        margin-right: 20px;
+    }
+
+    .col-3{
+        max-width: 80% !important;
+        flex-basis: 80% !important;
+        padding: 30px 40px 40px 40px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgb(238, 238, 238);
+        position: absolute;
+        z-index: 1;
+        top: 125px;
+        right: 10%;
+    }
+
+    #toggleMenu {
+        margin-right: 20px;
+        color: cadetblue;
+    }
+    .col-3{
+        display: none;
+    }
+    .col-3.active{
+        display: block;
+    }
+    /* #sidebar{
+        display: none;
+    } */
+
+}

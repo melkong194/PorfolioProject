@@ -1,0 +1,48 @@
+<div class="container">
+    <div class="row">
+        <section class="col-6">
+            <div class="ml-4 mb-4 font-weight-bold">PORFOLIO TYPE</div>
+
+            <div class="d-flex justify-content-start align-items-center pb-2">
+                <label for="name" class="mr-2">New note:</label>
+                <input id="pf_inputId" name="pf_inputId" type="text" class="form-control mr-2 w-25" value="">
+                <input id="pf_inputName" name="pf_inputId" type="text" class="form-control mr-2" value="">
+                <button (click)="createPf()" class="btn btn-success mr-1 waves-effect waves-light">Create</button>
+                <button (click)="editPf()" class="btn btn-warning mr-1 waves-effect waves-light">Edit</button>
+            </div>
+
+            <div class="d-flex justify-content-start align-items-center pb-2"
+            *ngFor="let item of pf"
+            >
+                <label for="name" class="mr-2">ID: {{item.id}}</label>
+                <input disabled id="name" name="pname" type="text" class="form-control mr-2" value="{{item.name}}">
+                <!-- <button class="btn btn-warning mr-1 waves-effect waves-light">Edit</button> -->
+                <button (click)="delPf(item.id)" class="btn btn-danger mr-1 waves-effect waves-light">Del</button>
+            </div>
+        </section>
+        
+        <section class="col-6">
+            <div class="ml-4 mb-4 font-weight-bold">NOTE TYPE</div>
+            
+            <div class="d-flex justify-content-start align-items-center pb-2">
+                <label for="name" class="mr-2">New note:</label>
+                <input id="pt_inputId" name="pf_inputId" type="text" class="form-control mr-2 w-25" value="">
+                <input id="pt_inputName" name="pf_inputId" type="text" class="form-control mr-2" value="">
+                <button (click)="createPt()" class="btn btn-success mr-1 waves-effect waves-light">Create</button>
+                <button (click)="editPt()" class="btn btn-warning mr-1 waves-effect waves-light">Edit</button>
+            </div>
+
+            <div class="d-flex justify-content-start align-items-center pb-2"
+            *ngFor="let item of pt"
+            >
+                <label for="name" class="mr-2">ID: {{item.id}}</label>
+                <input disabled id="name" name="pname" type="text" class="form-control mr-2" value="{{item.name}}">
+                <!-- <button class="btn btn-warning mr-1 waves-effect waves-light">Edit</button> -->
+                <button (click)="delPt(item.id)" class="btn btn-danger mr-1 waves-effect waves-light">Del</button>
+            </div>
+
+            
+
+        </section>
+    </div>
+</div>

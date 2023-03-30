@@ -1,0 +1,23 @@
+<div class="card mb-2 shadow-sm">
+    <div class="card-header">
+        {{ porf.name }}
+    </div>
+    <div class="card-body">
+        <div *ngIf="porf.imageurl" class="w-75 mx-auto">
+            <img width="250" class="card-img-top mb-4" src="{{ porf.imageurl }}" alt="Card image">
+        </div>
+        
+        <p class="mb-4 mt-4 card-text">{{ porf.article }}</p>
+
+        <div class="mt-4 w-75 mx-auto embed-responsive embed-responsive-4by3" *ngIf="porf.videourl">
+            <iframe class="embed-responsive-item" [src]="v"></iframe>
+        </div>
+
+    </div>
+    <!-- <p>name: {{ porf.name }}</p>
+    <p>iamge: {{ porf.imageurl }}</p>
+    <p>video: {{ porf.videourl }}</p>
+    <p>article: {{ porf.article }}</p>
+    <p>type: {{ porf.type }}</p>
+    <p>id: {{ porf.id }}</p> -->
+</div>

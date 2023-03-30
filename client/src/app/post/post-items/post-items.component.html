@@ -1,0 +1,42 @@
+<div class="zippy">
+    <div class="zippy-heading" [class.expanded]="isExpanded" (click)="toggle()">
+        {{ post.name }}
+        
+        <span class="fa" [ngClass]="{
+          'fa-chevron-up': isExpanded,
+          'fa-chevron-down': !isExpanded
+        }"></span>
+    </div>
+    <div [@expandCollapse]="isExpanded ? 
+                            'expanded' : 'collapsed'" class="zippy-body">
+        <ng-content></ng-content>
+        <div>
+            <!-- <div class="d-flex justify-content-end">
+                <a class="p-2 fa fa-plus-square" routerLink="/porf"> Add</a>
+                <a class="p-2 fa fa-pencil-square-o" routerLink="/porf"> Edit</a>
+                <a class="p-2 fa fa-trash" routerLink="/note"> Delete</a>
+            </div> -->
+            <div class="card-body">
+                <div *ngIf="post.imageurl" class="w-75 mx-auto">
+                    <img width="250" class="card-img-top mb-4" src="{{ post.imageurl }}" alt="Card image">
+                </div>
+                
+                <p class="mb-4 mt-4 card-text">{{ post.article }}</p>
+        
+                <div class="mt-4 w-75 mx-auto embed-responsive embed-responsive-4by3" *ngIf="post.videourl">
+                    <iframe class="embed-responsive-item" [src]="v"></iframe>
+                </div>
+        
+            </div>
+
+            <!-- CONTENT here<br>
+                <p>name: {{ post.name }}</p>
+                <p>iamge: {{ post.imageurl }}</p>
+                <p>video: {{ post.videourl }}</p>
+                <p>article: {{ post.article }}</p>
+                <p>type: {{ post.type }}</p>
+                <p>id: {{ post.id }}</p> -->
+
+        </div>
+    </div>
+</div>

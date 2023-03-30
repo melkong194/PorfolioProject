@@ -1,0 +1,56 @@
+<div class="container">
+    <div class="row">
+
+
+        <section class="col-3" id="navbarTogglerDemo01">
+            <h5 class="text-warning ml-3">Sort</h5>
+            <select class="custom-select mb-3" (change)="onSortSelected($event.target.value)">
+                <option *ngFor="let sort of sortOptions" [value]="sort.value">
+                    {{ sort.name}}
+                </option>
+            </select>
+
+            <h5 class="text-warning ml-3">Topics</h5>
+            <ul class="list-group my-3">
+                <li class="list-group-item" *ngFor="let type of types"
+                    [class.active]="type.id === this.porfParams.typeId" [value]="type.id"
+                    (click)="onTypeSelected(type.id)">
+                    {{ type.name }}
+                </li>
+            </ul>
+        </section>
+
+        <section class="col-9">
+            <div class="d-flex justify-content-between align-items-center pb-2">
+
+                <div class="form-inline mt-2">
+                    <input (keyup.enter)="onSearch()" class="form-control mr-2" #search style="width: 300px"
+                        placeholder="search" type="text">
+                    <button (click)="onSearch()" class="btn btn-outline-primary mr-2 my-2">Search</button>
+                    <button (click)="onReset()" class="btn btn-outline-success my-2">Reset</button>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-4 mb-4" *ngFor="let item of porfs">
+                    <div class="card h-100 mb-2 shadow-sm mr-2 ml-2">
+                        <div class="d-flex justify-content-between ">
+                            <a class="p-2 fa fa-plus-square" routerLink="/admin/porf/add/{{item.type}}"> Add</a>
+                            <a class="p-2 fa fa-pencil-square-o" routerLink="/admin/porf/edit/{{item.id}}"> Edit</a>
+                            <a class="p-2 fa fa-trash" routerLink="/admin/porf/delete/{{item.id}}"> Delete</a>
+                        </div>
+                        <app-admin-porf-items [porf]="item"></app-admin-porf-items>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center" *ngIf="totalCount > 1">
+                <app-pager [pageSize]="porfParams.pageSize" [totalCount]="totalCount"
+                    (pageChanged)="onPageChanged($event)">
+                </app-pager>
+            </div>
+
+        </section>
+    </div>
+</div>

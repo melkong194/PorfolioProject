@@ -1,0 +1,12 @@
+﻿Name,Article,Imageurl,Videourl,PostTypeId
+HOISTING,"JavaScript Hoisting refers to the process whereby the interpreter appears to move the declaration of functions, variables or classes to the top of their scope, prior to execution of the code.
+
+Hoisting is not a term normatively defined in the ECMAScript specification. The spec does define a group of declarations as HoistableDeclaration, but this only includes function, function*, async function, and async function* declarations. Hoisting is often considered a feature of var declarations as well, although in a different way. In colloquial terms, any of the following behaviors may be regarded as hoisting:
+
+Being able to use a variable's value in its scope before the line it is declared. (""Value hoisting"")
+Being able to reference a variable in its scope before the line it is declared, without throwing a ReferenceError, but the value is always undefined. (""Declaration hoisting"")
+The declaration of the variable causes behavior changes in its scope before the line in which it is declared.
+The four function declarations above are hoisted with type 1 behavior; var declaration is hoisted with type 2 behavior; let, const, and class declarations (also collectively called lexical declarations) are hoisted with type 3 behavior.","https://res.cloudinary.com/practicaldev/image/fetch/s--Ceq9cg87--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://thepracticaldev.s3.amazonaws.com/i/kaf11wh85tkhfv1338b4.png",,1
+SCOOPING,"A Multi-agent system is a system that consists of several agents that interact with each other. 
+interactions are often handled by messages that are sent between the agents",,,1
+DEPLOY API WITH DOCKER,Learning how to deploy API with Docker by adding docker-compose.yml,,,2
